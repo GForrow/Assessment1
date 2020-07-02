@@ -43,19 +43,19 @@ def test_four():
 #     assert python1.six("height") == False
 #     assert python1.six("receive") == True
 #
-# def test_seven():
-#     assert python1.seven("Hello") == 2
-#     assert python1.seven("hEelLoooO") == 6
-#     assert python1.seven("WhitEboarD") == 4
-#     assert python1.seven("as") == 1
-#     assert python1.seven("pass") == 1
-#
-# def test_eight():
-#     assert python1.eight(1) == 1
-#     assert python1.eight(3) == 6
-#     assert python1.eight(4) == 24
-#     assert python1.eight(6) == 720
-#     assert python1.eight(8) == 40320
+def test_seven():
+    assert python1.seven("Hello") == 2
+    assert python1.seven("hEelLoooO") == 6
+    assert python1.seven("WhitEboarD") == 4
+    assert python1.seven("as") == 1
+    assert python1.seven("pass") == 1
+
+def test_eight():
+    assert python1.eight(1) == 1
+    assert python1.eight(3) == 6
+    assert python1.eight(4) == 24
+    assert python1.eight(6) == 720
+    assert python1.eight(8) == 40320
 #
 # def test_nine():
 #     assert python1.nine("This is a Sentence","s") == 4

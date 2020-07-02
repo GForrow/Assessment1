@@ -227,7 +227,12 @@ def six(input):
 # How do we ignore case in a String? help(str) may offer some insight.
 
 def seven(input):
-    return 0
+    vcount = 0
+    vowels = "aAeEiIoOuU"
+    for char in input:
+        if char in vowels:
+            vcount += 1
+    return vcount
 
 
 # <QUESTION 8>
@@ -246,7 +251,11 @@ def seven(input):
 # You may need to create a list of numbers from 0 to i, take a look at help(range).
 
 def eight(input):
-    return 1
+    total = input
+    for i in range(input, 1, -1):
+        total = total*(i-1)
+    return total
+
 
 
 # <QUESTION 9>
