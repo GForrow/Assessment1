@@ -141,7 +141,24 @@ def three(arg1):
 # help(int) for working with numbers and help(str) for working with Strings.
 
 def four(arg1):
-    return 0
+    numbers = arg1.split(" ")
+    highestnum = 0
+    unitotal = 0
+
+    for num in numbers:
+        units = list(num)
+        digittotal = 0
+        for digit in units:
+            digittotal = int(digit) + int(digittotal)
+            if digittotal > highestnum:
+                highestnum = digittotal
+        # unittotal = int(num[0]) + int(num[1])
+        # print(unittotal)
+        # if unittotal > highestnum:
+        #     highestnum = unittotal
+
+    return highestnum
+
 
 
 # <QUESTION 5>
